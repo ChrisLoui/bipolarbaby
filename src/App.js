@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import BG from './assets/bg.webp'
+import MyBook from './Components/MyBook'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const BGtest = {
+  backgroundImage: `url(${BG})`,
+  backgroundRepeat:"no-repeat",
+  backgroundSize:"cover",
+  backgroundPosition:"center",
+  minHeight: "100vh",
+  width: "100%"
 }
 
-export default App;
+const App = () => {
+  return (
+    <div
+    style={BGtest}
+     className='
+     w-full h-full flex justify-center items-center'>
+      <MyBook />
+    </div>
+  )
+}
+
+export default App
