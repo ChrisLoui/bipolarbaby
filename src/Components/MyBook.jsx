@@ -14,6 +14,8 @@ import LetterPage from './pages/LetterPage';
 import NinthPage from './pages/NinthPage';
 import EleventhPage from './pages/EleventhPage';
 import TwelvePage from './pages/TwelvePage';
+import FifteenthPage from './pages/FifteenthPage';
+import Lettter_Page from './pages/Letter_Page';
 
 
 function MyBook(props) {
@@ -51,6 +53,12 @@ function MyBook(props) {
             </Page>
             <Page number={10}>
                 <TwelvePage />
+            </Page>
+            <Page number={10}>
+                <FifteenthPage />
+            </Page>
+            <Page number={10}>
+                <Lettter_Page />
             </Page>
             <Page number={10}>
                 <NinthPage />
