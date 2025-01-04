@@ -16,11 +16,21 @@ import EleventhPage from './pages/EleventhPage';
 import TwelvePage from './pages/TwelvePage';
 import FifteenthPage from './pages/FifteenthPage';
 import Lettter_Page from './pages/Letter_Page';
+import { useModal } from './ModalContent';
 
 
 function MyBook(props) {
+    const { isModalOpen } = useModal();
     return (
-        <HTMLFlipBook className='flip-book' width={600} height={700} showCover={true}>
+        <HTMLFlipBook className='flip-book' width={600} height={700} showCover={true} 
+        useMouseEvents={!isModalOpen}
+        style={{
+            minWidth: '300px',
+            maxWidth: '600px',
+            minHeight: '400px',
+            maxHeight: '700px'
+        }}
+        > 
             <Page number={1}>
                 <Cover coverPNG={coverPNG} title="A book" />
             </Page>
