@@ -20,7 +20,7 @@ const App = () => {
     <div
     style={BGtest}
      className='
-     w-full h-full flex justify-center items-center'>
+     w-full h-full flex justify-center items-center overflow-hidden'>
       <MyBook />
     </div>
     </ModalProvider>

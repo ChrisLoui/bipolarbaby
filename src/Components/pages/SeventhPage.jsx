@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "../TodoModal/TodoModal";
+import TodoList from "../TodoModal/TodoModal";
 
 const SeventhPage = () => {
   return (
@@ -15,7 +15,7 @@ const SeventhPage = () => {
           </div>
         </div>
         <div className="p-5 bg-white h-3/4 border-8 w-full overflow-y-scroll">
-          <Modal />
+          <TodoList />
         </div>
       </main>
     </div>
